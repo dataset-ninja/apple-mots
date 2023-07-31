@@ -1,0 +1,1 @@
+Dataset for benchmarking Multiple Object Tracking and Segmentation (MOTS) in an apple orchard field. is under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
