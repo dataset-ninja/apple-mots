@@ -15,6 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "Apple MOTS"
 PROJECT_NAME_FULL: str = "Dataset for Benchmarking Multiple Object Tracking and Segmentation (MOTS) in an Apple Orchard Field."
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
@@ -37,7 +38,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://zenodo.org/record/5939726#.Yk730X9Bzmg"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 1725011
+PREVIEW_IMAGE_ID: int = 2084084
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/apple-mots"
@@ -64,7 +65,9 @@ AUTHORS: Optional[List[str]] = ["Jong, Stefan de", "Baja, Hilmy", "Valente, Joã
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Wageningen University & Research. Netherlands"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.wur.nl/en.htm"
 
-SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
+    "__POSTTEXT__": "Additionaly, it could be splitted in 12 scenes"
+}
 TAGS: Optional[List[str]] = None
 
 ##################################
@@ -86,6 +89,7 @@ def get_settings():
     settings = {
         "project_name": PROJECT_NAME,
         "license": LICENSE,
+        "hide_dataset": HIDE_DATASET,
         "applications": APPLICATIONS,
         "category": CATEGORY,
         "cv_tasks": CV_TASKS,
