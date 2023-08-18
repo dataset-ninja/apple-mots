@@ -57,9 +57,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 PAPER: Optional[Union[str, List[str]]] = None
-CITATION_URL: Optional[
-    str
-] = "https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels"
+CITATION_URL: Optional[str] = "https://zenodo.org/record/5939726/export/hx"
 AUTHORS: Optional[List[str]] = ["Jong, Stefan de", "Baja, Hilmy", "Valente, João"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Wageningen University & Research. Netherlands"

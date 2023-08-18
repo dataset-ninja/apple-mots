@@ -15,4 +15,4 @@ If you make use of the Apple orchard field MOTS data, please cite the following 
 }
 ```
 
-[🔗 Source](https://zenodo.org/record/5939726#.Yk730X9Bzmg)
+[Source](https://zenodo.org/record/5939726#.Yk730X9Bzmg)
