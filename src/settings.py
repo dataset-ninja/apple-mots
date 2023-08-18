@@ -13,8 +13,8 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "Apple orchard field MOTS"
-PROJECT_NAME_FULL: str = "Dataset for benchmarking Multiple Object Tracking and Segmentation (MOTS) in an apple orchard field."
+PROJECT_NAME: str = "Apple MOTS"
+PROJECT_NAME_FULL: str = "Dataset for Benchmarking Multiple Object Tracking and Segmentation (MOTS) in an Apple Orchard Field."
 
 ##################################
 # * After uploading to instance ##
@@ -25,8 +25,8 @@ CATEGORY: Category = Category.Agriculture()
 
 CV_TASKS: List[CVTask] = [
     CVTask.InstanceSegmentation(),
-    CVTask.ObjectDetection(),
     CVTask.SemanticSegmentation(),
+    CVTask.ObjectDetection(),
 ]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
@@ -56,11 +56,13 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 PAPER: Optional[Union[str, List[str]]] = None
-CITATION_URL: Optional[str] = None
+CITATION_URL: Optional[
+    str
+] = "https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels"
 AUTHORS: Optional[List[str]] = ["Jong, Stefan de", "Baja, Hilmy", "Valente, João"]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Wageningen University & Research. Netherlands"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.wur.nl/en.htm"
 
 SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
 TAGS: Optional[List[str]] = None

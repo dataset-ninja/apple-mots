@@ -7,7 +7,13 @@ import numpy as np
 import supervisely as sly
 from cv2 import connectedComponents
 from dataset_tools.convert import unpack_if_archive
-from supervisely.io.fs import file_exists, get_file_name
+from dotenv import load_dotenv
+from supervisely.io.fs import (
+    dir_exists,
+    file_exists,
+    get_file_name,
+    get_file_name_with_ext,
+)
 from tqdm import tqdm
 
 import src.settings as s
@@ -63,7 +69,18 @@ def convert_and_upload_supervisely_project(
     api: sly.Api, workspace_id: int, project_name: str
 ) -> sly.ProjectInfo:
     ### Function should read local dataset and upload it to Supervisely project, then return project info.###
-    dataset_path = "/home/alex/DATASETS/TODO/apple orchard field/APPLE_MOTS"
+    # https://zenodo.org/record/5939726#.Yk730X9Bzmg
+
+    # # if sly.is_development():
+    # load_dotenv("local.env")
+    # load_dotenv(os.path.expanduser("~/supervisely.env"))
+
+    # api = sly.Api.from_env()
+    # team_id = sly.env.team_id()
+    # workspace_id = sly.env.workspace_id()
+
+    # project_name = "APPLE MOTS"
+    dataset_path = "APP_DATA/APPLE_MOTS/APPLE_MOTS"
     images_folder = "images"
     anns_folder = "instances"
     batch_size = 30
@@ -125,5 +142,4 @@ def convert_and_upload_supervisely_project(
             api.annotation.upload_anns(img_ids, anns)
 
             progress.iters_done_report(len(img_names_batch))
-
     return project
