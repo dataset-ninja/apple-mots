@@ -1,6 +1,6 @@
-Dataset **Apple orchard field MOTS** can be downloaded in Supervisely format:
+Dataset **Apple MOTS** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/X/H/kW/IMETab09TudO6UvFGIJNlHprTAnwD9PtqMn6uBnmrdZaF5ufxKDyX7WhI6L33tP5DWmH2F8rwIuBVggjcvvnObF1OSBTMj3tig18uj02nQcqMu3fGqRjZ4OIpyuo.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/N/K/dy/lDpHtlJFcGg8eA0wCiSpQMs9a1VMt4c2EMKnJ9sGBgPJtYr280DG4Q8UfGPzHD8ymdibOacF2Ma50hFyVJpC2ptAY4gUxkJ4NcckAdktTthZCUFgbefJhegaJ8H5.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
@@ -11,6 +11,8 @@ pip install --upgrade dataset-tools
 ``` python
 import dataset_tools as dtools
 
-dtools.download(dataset='Apple orchard field MOTS', dst_path='~/dtools/datasets/Apple orchard field MOTS.tar')
+dtools.download(dataset='Apple MOTS', dst_dir='~/dataset-ninja/')
 ```
-The data in original format can be 🔗[downloaded here](https://zenodo.org/record/5939726/files/APPLE_MOTS.zip?download=1)
+Make sure not to overlook the [python code example](https://developer.supervisely.com/getting-started/python-sdk-tutorials/iterate-over-a-local-project) available on the Supervisely Developer Portal. It will give you a clear idea of how to effortlessly work with the downloaded dataset.
+
+The data in original format can be [downloaded here](https://zenodo.org/record/5939726/files/APPLE_MOTS.zip?download=1).
