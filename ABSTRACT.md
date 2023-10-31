@@ -1,5 +1,1 @@
-A dataset of temporally consistent apple images and labels taken using UAVs and a wearable sensor in an orchard, consisting of 86000 manually annotated apple instances and 1700 frames annotated in the MOTS (Multi-object Tracking and Segmentation) style.
-
-Sequence 0-5 are used for training. Sequence 6-8 are used for testing/validation. Sequence 10-12 are the testing datasets that have "ignore regions" overlays.
-
-The code used in the paper can be found on the [authors GitLab.](https://git.wur.nl/said-lab/rt-obj-tracking/)
+The **Apple MOTS** dataset comprises temporally synchronized images and labels of apples, captured using UAVs (Unmanned Aerial Vehicles) and a wearable sensor in an orchard. It includes a total of 86,000 manually annotated apple instances and 1,700 frames annotated following the MOTS (Multi-object Tracking and Segmentation) style. Sequences 0 to 5 are allocated for training, while sequences 6 to 8 are designated for testing and validation. Sequences 10 to 12 represent the testing datasets, which feature overlays for "ignore regions."
