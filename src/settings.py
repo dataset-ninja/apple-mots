@@ -56,15 +56,18 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
-PAPER: Optional[Union[str, List[str]]] = None
+PAPER: Optional[Union[str, List[str]]] = ["https://ieeexplore.ieee.org/document/9857971"]
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitLab":"https://git.wur.nl/said-lab/rt-obj-tracking/"}
+
 CITATION_URL: Optional[str] = "https://zenodo.org/record/5939726/export/hx"
 AUTHORS: Optional[List[str]] = ["Jong, Stefan de", "Baja, Hilmy", "Valente, João"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["https://www.researchgate.net/profile/Joao-Valente-15"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Wageningen University & Research. Netherlands"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.wur.nl/en.htm"
 
 SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
-    "__POSTTEXT__": "Additionaly, it could be splitted in 12 scenes"
+    "__POSTTEXT__": "Additionally, it could be split into 12 scenes"
 }
 TAGS: Optional[List[str]] = None
 
@@ -108,6 +111,8 @@ def get_settings():
     settings["paper"] = PAPER
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
+    settings["repository"] = REPOSITORY
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
