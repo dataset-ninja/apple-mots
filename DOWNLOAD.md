@@ -1,6 +1,6 @@
 Dataset **Apple MOTS** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/4/9/Gp/v3EzPHFrErHrvlFw98HknaVgMaEcCx7D4xMMyKZKu63LGFvfUdMlgbKgH0YHruUTqtQfgv7NIqlLJWhrH6aGYYm1j5veZTaLlrQwUsGQH8kdBsxdL6GCgkXrvMwQ.tar)
+ [Download](https://www.dropbox.com/scl/fi/vhlye6hg08d27apse1g0t/apple-mots-DatasetNinja.tar?rlkey=2hsub728391vciiy7lzbajm2g&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
